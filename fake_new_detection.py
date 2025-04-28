@@ -1,5 +1,3 @@
-# fake_news_detector.py
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -12,7 +10,7 @@ import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Title
+
 st.title("📰 Fake News Detection")
 
 @st.cache_data
@@ -28,7 +26,6 @@ def load_data():
     data = data[["text", "label"]]
     return data
 
-# Text cleaning function
 def clean_text(text):
     text = re.sub(r"http\S+|www\S+|https\S+", '', text, flags=re.MULTILINE)
     text = re.sub(r'\@w+|\#', '', text)
@@ -36,7 +33,6 @@ def clean_text(text):
     text = text.lower()
     return text
 
-# Load and clean data
 data = load_data()
 data["text"] = data["text"].apply(clean_text)
 
@@ -51,7 +47,6 @@ class_counts = data["label"].value_counts().rename(index={0: "Fake News", 1: "Re
 fig = px.pie(values=class_counts.values, names=class_counts.index, title="Fake vs Real News Distribution")
 st.plotly_chart(fig)
 
-# Train-test split
 X_train, X_test, y_train, y_test = train_test_split(
     data["text"], data["label"], test_size=0.2, random_state=42
 )
@@ -80,7 +75,6 @@ ax.set_xlabel("Predicted Label")
 ax.set_ylabel("True Label")
 st.pyplot(fig_cm)
 
-# User Input
 st.subheader("Check News Authenticity")
 user_input = st.text_area("Enter news article text to check:", height=200)
 
