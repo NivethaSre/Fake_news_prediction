@@ -1,5 +1,3 @@
-Awesome! 📸 Here's an upgraded version of your `README.md` that **includes a preview screenshot** section — this will make your GitHub project look much more professional!
-
 ---
 
 # 📰 Fake News Prediction App
@@ -12,9 +10,11 @@ A simple, interactive web application built with **Streamlit** to predict whethe
 
 ## 📸 App Preview
 
-![App Screenshot](https://user-images.githubusercontent.com/your-github-username/your-repo-name/main/preview.png)
-
-> *(Replace the link above with your actual screenshot! Instructions below.)*
+![image](https://github.com/user-attachments/assets/c0db3102-87e4-4c6c-88a3-7a05aa70fe91)
+![image](https://github.com/user-attachments/assets/0c42d62e-2773-483d-98a6-1ff59ca0a28c)
+![image](https://github.com/user-attachments/assets/ff595735-9af4-4219-a4e0-3f354b219df3)
+![image](https://github.com/user-attachments/assets/42b4f1eb-7105-4718-8f82-ec699d5fe3a9)
+![image](https://github.com/user-attachments/assets/fcad1018-c9f8-41d4-abf3-dc6374f22ae4)
 
 ---
 
